@@ -1,0 +1,73 @@
+* {
+  font-family: persian, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: persian;
+  src: url(../fonts/BYekan.ttf);
+}
+/* ----------------header----------------- */
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----------------main----------------- */
+
+/* ----------------footer----------------- */
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    #ff0000,
+    #0400ff,
+    #00ccff,
+    #ff0000
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 8s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: rtl;
+  width: 250%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px black;
+  font-family: Arial, sans-serif;
+}
+
+.info p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.info i {
+  margin-left: 10px;
+}

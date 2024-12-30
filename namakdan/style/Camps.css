@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "BYekan", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(306deg, #b440a1, #cf58a8);
+  background-size: 400% 400%;
+  animation: AnimationName 44s ease infinite;
+  color: #333;
+}
+@font-face {
+  font-family: "BYekan";
+  src: url("../fonts/BYekan.ttf") format("truetype");
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 23%;
+  }
+  50% {
+    background-position: 100% 78%;
+  }
+  100% {
+    background-position: 0% 23%;
+  }
+}
+header {
+  background: rgba(175, 73, 153, 0.9);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+main {
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+}
+h2 {
+  color: #3b5998;
+  border-bottom: 2px solid #3b5998;
+  padding-bottom: 5px;
+}
+section {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+footer {
+  background: rgba(172, 63, 187, 0.9);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+.activities ul {
+  list-style: none;
+  padding: 0;
+}
+.activities ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.activities ul li i {
+  margin-left: 10px;
+  color: #3b5998;
+}
+.contact p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.contact p i {
+  margin-left: 10px;
+  color: #3b5998;
+}
